@@ -4,12 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles.css">
     <title>siteprint</title>
 </head>
 <body>
     <section id="banner">
-
+       <img class="logo" src="/Barber_Shop_img/logo.png">
+       <div class="banner-text">
+           <h1>Hello!</h1>
+           <h2>I'm Zacc</h2>
+           <p>I'm a frontend web developer...</p>
+           <div class="banner-btn">
+               <a href="#"><span></span>Find Out</a>
+               <a href="#"><span></span>Read More</a>
+           </div>       
+        </div>
     </section>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">FEATURES</a></li>
+                <li><a href=""><SERVICES/a></li>
+                <li><a href="">TESTIMONIALS</a></li>
+                <li><a href="">MEET US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="/Barber_Shop_img/menu.png" id="menu">
+    </div>
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var sidenav = document.getElementById("sidenav")
+        var menu = document.getElementById("menu")
+        
+        sidenav.style.right = "-250px"
+
+
+        menubtn.onclick = function(){
+            if(sidenav.style.right == "-250px"){
+                sidenav.style.right = "0";
+                menu.src = "/Barber_Shop_img/close.png";
+            }
+            else{
+                sidenav.style.right = "-250px";
+                menu.src = "/Barber_Shop_img/menu.png";
+            }
+        }
+    </script>
 </body>
 </html>
