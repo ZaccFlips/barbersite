@@ -7,7 +7,7 @@
     background-image: linear-gradient(rgba(0,0,0,0.5),#556374), url(/Barber_Shop_img/banner.jpg);
     background-size: cover;
     height: 100vh;
-    padding-bottom: 180px;
+    
 }
 .logo{
     width: 140px;
@@ -18,7 +18,7 @@
 .banner-text{
     text-align: center;
     color: #fff;
-    padding-top: 180px;
+    padding-top: 100px;
     
 }
 .banner-text h1{
@@ -98,4 +98,52 @@ nav ul li a{
 #menubtn img{
     width: 20px;
     margin-top: 15px;
+}
+
+@media only screen and (max-width: 770px){
+    .banner-text h1{
+       font-size: 44px; 
+    }
+    .banner-text h2{
+        font-size: 30px;
+    }
+    .banner-btn a{
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+
+/*----features----*/
+
+#features{
+    width: 100%;
+    padding: 70px;
+    margin: 50px auto;
+}
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: #009688;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.title-text p::after{
+    content: "";
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#019587,#fff);
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: -1;
+}
+.title-text h1{
+    font-size: 50px;
 }
