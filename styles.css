@@ -4,7 +4,7 @@
     font-family: 'Poppins', sans-serif;
 }
 #banner{
-    background-image: linear-gradient(rgba(0,0,0,0.5),#556374), url(/Barber_Shop_img/banner.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),#1daaaf), url(/Barber_Shop_img/banner.jpg);
     background-size: cover;
     height: 100vh;
     
@@ -140,10 +140,43 @@ nav ul li a{
     height: 35px;
     background: linear-gradient(#019587,#fff);
     position: absolute;
-    top: 20px;
+    top: -20px;
     left: 0;
     z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
 }
 .title-text h1{
     font-size: 50px;
+}
+.feature-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.features{
+    flex-basis: 50%;
+}
+.features-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+.features-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+.features h1{
+    display: flex;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #009688;
+}
+.features-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
 }
